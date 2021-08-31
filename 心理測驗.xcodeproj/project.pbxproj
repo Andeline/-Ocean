@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57C497D826DB86A4006E8821 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C497D726DB86A4006E8821 /* Question.swift */; };
+		57C497DC26DBD4E4006E8821 /* PersonalityTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C497DB26DBD4E4006E8821 /* PersonalityTrait.swift */; };
 		57CBD53C26D92E9E0041774C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBD53B26D92E9E0041774C /* AppDelegate.swift */; };
 		57CBD53E26D92E9E0041774C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBD53D26D92E9E0041774C /* SceneDelegate.swift */; };
 		57CBD54026D92E9E0041774C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBD53F26D92E9E0041774C /* ViewController.swift */; };
 		57CBD54326D92E9E0041774C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CBD54126D92E9E0041774C /* Main.storyboard */; };
 		57CBD54526D92EA30041774C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CBD54426D92EA30041774C /* Assets.xcassets */; };
 		57CBD54826D92EA30041774C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CBD54626D92EA30041774C /* LaunchScreen.storyboard */; };
+		57D631B926DA84D500D9BCCF /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D631B826DA84D400D9BCCF /* AnalyzeViewController.swift */; };
+		57D631BB26DA84F700D9BCCF /* ScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D631BA26DA84F700D9BCCF /* ScoreTableViewController.swift */; };
+		57D631BD26DA87F000D9BCCF /* Btn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D631BC26DA87F000D9BCCF /* Btn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57C497D726DB86A4006E8821 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		57C497DB26DBD4E4006E8821 /* PersonalityTrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTrait.swift; sourceTree = "<group>"; };
 		57CBD53826D92E9E0041774C /* 心理測驗.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "心理測驗.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CBD53B26D92E9E0041774C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57CBD53D26D92E9E0041774C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		57CBD54426D92EA30041774C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57CBD54726D92EA30041774C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57CBD54926D92EA30041774C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D631B826DA84D400D9BCCF /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
+		57D631BA26DA84F700D9BCCF /* ScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewController.swift; sourceTree = "<group>"; };
+		57D631BC26DA87F000D9BCCF /* Btn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Btn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		57CBD53A26D92E9E0041774C /* 心理測驗 */ = {
 			isa = PBXGroup;
 			children = (
+				57CBD55726D937BA0041774C /* Model */,
+				57CBD55426D937130041774C /* Controller */,
 				57CBD53B26D92E9E0041774C /* AppDelegate.swift */,
 				57CBD53D26D92E9E0041774C /* SceneDelegate.swift */,
-				57CBD53F26D92E9E0041774C /* ViewController.swift */,
 				57CBD54126D92E9E0041774C /* Main.storyboard */,
 				57CBD54426D92EA30041774C /* Assets.xcassets */,
 				57CBD54626D92EA30041774C /* LaunchScreen.storyboard */,
 				57CBD54926D92EA30041774C /* Info.plist */,
 			);
 			path = "心理測驗";
+			sourceTree = "<group>";
+		};
+		57CBD55426D937130041774C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57CBD53F26D92E9E0041774C /* ViewController.swift */,
+				57D631BA26DA84F700D9BCCF /* ScoreTableViewController.swift */,
+				57D631B826DA84D400D9BCCF /* AnalyzeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		57CBD55726D937BA0041774C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57C497D726DB86A4006E8821 /* Question.swift */,
+				57D631BC26DA87F000D9BCCF /* Btn.swift */,
+				57C497DB26DBD4E4006E8821 /* PersonalityTrait.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D631BD26DA87F000D9BCCF /* Btn.swift in Sources */,
+				57C497D826DB86A4006E8821 /* Question.swift in Sources */,
 				57CBD54026D92E9E0041774C /* ViewController.swift in Sources */,
 				57CBD53C26D92E9E0041774C /* AppDelegate.swift in Sources */,
+				57D631BB26DA84F700D9BCCF /* ScoreTableViewController.swift in Sources */,
+				57C497DC26DBD4E4006E8821 /* PersonalityTrait.swift in Sources */,
 				57CBD53E26D92E9E0041774C /* SceneDelegate.swift in Sources */,
+				57D631B926DA84D500D9BCCF /* AnalyzeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
